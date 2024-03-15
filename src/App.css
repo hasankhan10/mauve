@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home{
+    background-image: url("https://cdn.dribbble.com/users/41854/screenshots/2954147/media/ab8f6bbe585dad7d4bc27808702ec9b1.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.contact{
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
