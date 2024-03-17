@@ -1,13 +1,11 @@
 
 function Contact() {
   return (
-    <div className='contact w-screen h-screen flex flex-col justify-center place-items-center'>
+    <div className='contact w-screen h-screen flex flex-col justify-center place-items-center bg-gray-400'>
 
-        <img className=" absolute w-full h-full bg-cover object-cover blur-sm -z-10" src='https://cdn.dribbble.com/users/1040798/screenshots/15685874/media/aa9588469e19517c2b94b1addd15d11d.gif' alt="" />
-        
-        <h1 className=" absolute z-10 top-[90px] text-4xl font-bold font-mono text-black bg-yellow-500 p-2 rounded-md">Want to Contact with us ?</h1>
+        <h1 className=" absolute z-10 top-[95px] text-4xl font-bold font-mono text-black p-2 rounded-md">Want to Contact with us ?</h1>
         <section className=" w-full h-full flex justify-center place-items-center space-x-10 mt-10">
-          <div className="form w-[55%] h-[65%] rounded-2xl backdrop-blur-md overflow-hidden flex justify-center place-items-center">
+          <div className="form w-[50%] h-[65%] rounded-2xl backdrop-blur-sm overflow-hidden flex justify-center place-items-center">
               <form className=" w-[85%] h-[95%] flex flex-col justify-center place-items-center gap-5">
 
                   <input className=" w-full" type="text" name="name" id="name" required placeholder="Enter your Name"/>
@@ -20,10 +18,12 @@ function Contact() {
 
                   <textarea className=" w-full" name="message" id="message" cols="30" required rows="5" placeholder="Type your Message here !"></textarea>
 
-                  <input className=" text-xl font-bold w-40 cursor-pointer" type="submit" value="Submit" />
+
+                  <button className=" text-xl font-bold w-40 h-10 cursor-pointer bg-blue-800 text-white rounded-lg hover:bg-blue-700 hover:border-2" type="submit">Submit</button>
+
               </form> 
           </div>
-          <div className="con w-72 h-96 bg-gray-600 rounded-xl text-white font-semibold text-lg text-center flex flex-col gap-6 justify-center place-items-center">
+          <div className="con w-72 h-96 backdrop-blur-lg rounded-xl font-semibold text-lg text-center flex flex-col gap-6 justify-center place-items-center">
             <p>804, 8th floor, Arch Square X2</p>
             <p>EP-Y1, EP Block, Sector V, Saltlake</p>
             <p>Kolkata, West Bengal 700091</p>

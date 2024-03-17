@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.home{
-    background-image: url("https://cdn.dribbble.com/users/41854/screenshots/2954147/media/ab8f6bbe585dad7d4bc27808702ec9b1.gif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-}
 .contact{
-    background-image: url();
-    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
+    background-position: center;
 }
+.home{
+    background-image: url("https://images.unsplash.com/photo-1519642918688-7e43b19245d8?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 form input,
 textarea{
     background-color: white;
