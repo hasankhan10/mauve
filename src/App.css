@@ -28,3 +28,16 @@ textarea{
     border-bottom: 2px solid black;
     padding: 5px 10px;
 }
+.ourProcess{
+    background-image: url("./2.png");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+.pic{
+    box-shadow: 2px 2px 20px;
+    transition: all 0.2s linear;
+}
+.pic:hover{
+    box-shadow: 2px 2px 20px yellow;
+}
