@@ -40,4 +40,22 @@ textarea{
 }
 .pic:hover{
     box-shadow: 2px 2px 20px yellow;
+    transform: scale(1.01);
+}
+.about{
+    background-image: url("https://cdn.dribbble.com/users/13076974/screenshots/19584469/media/c065bc0a1249acd59f300d95aff1f61b.png?resize=800x600&vertical=center");
+    background-size: cover;
+    object-fit: cover;
+    background-position: top;
+}
+.abpi{
+    background-image: url("https://static.wixstatic.com/media/509ec8c0032f4af0a562907b58271d04.jpg/v1/fill/w_850,h_950,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/509ec8c0032f4af0a562907b58271d04.jpg");
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 2px 2px 20px;
+    transition: all 0.2s linear;
+}
+.abpi:hover{
+    box-shadow: 2px 2px 20px red;
+    transform: scale(1.01);
 }
