@@ -6,7 +6,7 @@ function OurProcess() {
         <section className="pic w-[40%] h-[80%] overflow-hidden rounded-2xl">
             <img className=" w-full h-full" src="https://i.pinimg.com/564x/99/54/8a/99548af51d74f323b630a15621d78599.jpg" alt="" />
         </section>
-        <section className=" w-[45%] h-[80%] backdrop-blur-2xl flex flex-col gap-10 justify-center place-items-center">
+        <section className=" w-[45%] h-[80%] backdrop-blur-2xl flex flex-col gap-10 justify-center place-items-center rounded-xl">
             <h1 className=" text-center text-6xl font-bold text-amber-950">OUR METHODOLOGY</h1>
             <p className=" text-center text-xl font-semibold">
                 <TypeAnimation

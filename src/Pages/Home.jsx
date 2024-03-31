@@ -8,7 +8,7 @@ function Home() {
               <TypeAnimation
                 sequence={["Wellcome to Mauve Interio"]}
                 cursor={false}
-                speed={20}
+                speed={15}
               />
             </h1>
             <p className=" text-2xl text-center font-mono font-semibold opacity-95">Interior Design for Great Homes and Working Space</p>

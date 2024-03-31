@@ -23,7 +23,7 @@ function ImageDiv({getUrl}) {
          {imageData.map((image,key)=>{
             
             return (
-                <button  onClick={()=>{
+                <button onClick={()=>{
                     let url = image.url;
                     handleImage(url,key)
                 }}>
