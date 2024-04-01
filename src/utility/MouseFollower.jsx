@@ -9,7 +9,7 @@ function MouseFollower() {
         
     })
   return (
-    <div className='mouseFollower absolute z-50 w-3 h-3 rounded-full bg-gray-700 transition-all duration-700 ease-out' style={{top:top,left:left}}></div>
+    <div className='mouseFollower absolute z-30 w-3 h-3 rounded-full bg-gray-900 transition-all duration-700 ease-out' style={{top:top,left:left}}></div>
   )
 }
 

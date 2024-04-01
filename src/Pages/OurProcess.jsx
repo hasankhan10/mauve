@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { TypeAnimation } from "react-type-animation"
 
 function OurProcess() {
@@ -6,7 +7,7 @@ function OurProcess() {
         <section className="pic w-[40%] h-[80%] overflow-hidden rounded-2xl">
             <img className=" w-full h-full" src="https://i.pinimg.com/564x/99/54/8a/99548af51d74f323b630a15621d78599.jpg" alt="" />
         </section>
-        <section className=" w-[45%] h-[80%] backdrop-blur-2xl flex flex-col gap-10 justify-center place-items-center rounded-xl">
+        <section className=" w-[45%] h-[80%] z-30 backdrop-blur-2xl flex flex-col gap-10 justify-center place-items-center rounded-xl">
             <h1 className=" text-center text-6xl font-bold text-amber-950">OUR METHODOLOGY</h1>
             <p className=" text-center text-xl font-semibold">
                 <TypeAnimation
@@ -15,7 +16,9 @@ function OurProcess() {
                     speed={50}
                 />
             </p>
-            <button className=" w-40 h-12 bg-slate-500 rounded-xl text-white text-xl font-medium border-2 border-black hover:scale-[1.02] duration-150 hover:shadow-2xl">Get in touch</button>
+            <NavLink to={"/contact"}>
+              <button className=" w-56 h-14 bg-blue-800 text-white font-bold text-xl mt-8 rounded-md hover:scale-105 duration-300 hover:shadow-2xl shadow-black">Get in touch</button>
+            </NavLink>
         </section>
     </div>
   )

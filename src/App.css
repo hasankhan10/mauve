@@ -59,6 +59,7 @@ textarea{
     box-shadow: 2px 2px 20px red;
     transform: scale(1.01);
 }
-.change-box{
-   
+a.active{
+    color: blue;
+    font-weight: 700;
 }

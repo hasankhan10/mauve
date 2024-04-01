@@ -21,13 +21,15 @@ function ImageDiv({getUrl}) {
     <>
           
          {imageData.map((image,key)=>{
-            
+            let url = image.url
             return (
                 <button onClick={()=>{
                     let url = image.url;
                     handleImage(url,key)
                 }}>
-                    <div className=' w-24 h-32 rounded-xl bg-slate-500 hover:opacity-90 duration-300' style={{border:key==index?border:null,scale:key==index?scale:"1",marginBottom:key==index?margin:"0"}}>{image.url}</div>
+                    <div className=' w-24 h-32 rounded-xl overflow-hidden bg-slate-500 duration-300' style={{border:key==index?border:null,scale:key==index?scale:"1",marginBottom:key==index?margin:"0"}}>
+                        <img className=" w-full h-full" src={url} alt="" />
+                    </div>
                 </button>
             )
          })}
