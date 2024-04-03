@@ -9,7 +9,7 @@ function Navbar() {
     bool === true ? setDisplay("block") : setDisplay("none")
   }
   return (
-    <div className='navbar absolute w-[100%] sm:h-[50px] h-[50%] top-7 flex sm:justify-start justify-end pl-16 sm:space-x-72 z-50'>
+    <div className='navbar absolute w-[100%] sm:h-[50px] h-[50%] top-7 flex sm:justify-start justify-end pl-16 sm:gap-72 z-50'>
         <Menu getBool ={getBool} />
         <nav className='logo hidden sm:block h-full w-fit hover:scale-105 duration-200'>
         
