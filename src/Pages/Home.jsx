@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 function Home() {
   return (
-    <div className="home w-screen h-screen flex justify-end">
-        <div className="welcome w-[50%] h-full flex flex-col justify-center place-items-center">
-            <h1 className=" text-8xl text-center h-[30%] opacity-95 text-gray-800">
+    <div className="home w-screen h-screen flex sm:justify-end justify-center">
+        <div className="welcome sm:w-[50%] w-full h-full flex flex-col justify-center place-items-center">
+            <h1 className=" sm:text-8xl text-5xl text-center sm:h-[30%] h-[18%] opacity-95 text-gray-800">
               <TypeAnimation
                 sequence={["Wellcome to Mauve Interio"]}
                 cursor={false}

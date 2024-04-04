@@ -1,15 +1,15 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import MouseFollower from './utility/MouseFollower'
-import OurProcess from './Pages/OurProcess'
-import Services from './Pages/Services'
+import Home from './Pages/Home'
 function App() {
  
   return (
     <>
-        <Navbar />
-        {/* <MouseFollower />
-        <Outlet /> */}
+        {/* <Navbar /> */}
+        <Home />
+        {/* <MouseFollower /> */}
+        {/* <Outlet /> */}
     </>
   )
 }
