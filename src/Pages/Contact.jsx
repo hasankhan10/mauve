@@ -5,10 +5,10 @@ function Contact() {
     
       <div className='contact w-screen h-screen flex flex-col justify-center place-items-center bg-gray-400'>
 
-          <h1 className=" absolute z-10 top-[95px] text-4xl font-bold font-mono text-black p-2 rounded-md">Want to Contact with us ?</h1>
-          <section className=" w-full h-full flex justify-center place-items-center space-x-10 mt-10">
+          <h1 className=" absolute z-10 sm:top-[95px] top-[20px] text-4xl font-bold font-mono text-black p-3 rounded-md text-center">Want to Contact with us ?</h1>
+          <section className=" w-full h-full flex flex-col-reverse sm:flex-row justify-center place-items-center sm:space-x-10 mt-10">
             <Map />
-            <div className="form w-[50%] h-[65%] rounded-2xl backdrop-blur-sm overflow-hidden flex justify-center place-items-center">
+            <div className="form sm:w-[50%] w-full h-[65%] rounded-2xl backdrop-blur-sm overflow-hidden flex justify-center place-items-center">
                 <form className=" w-[85%] h-[95%] flex flex-col justify-center place-items-center gap-5">
 
                     <input className=" w-full" type="text" name="name" id="name" required placeholder="Enter your Name"/>
@@ -26,7 +26,7 @@ function Contact() {
 
                 </form> 
             </div>
-            <div className="con w-72 h-96 backdrop-blur-lg rounded-xl font-semibold text-lg text-center flex flex-col gap-6 justify-center place-items-center">
+            <div className="con w-72 sm:h-96 mt-20 backdrop-blur-lg rounded-xl font-semibold text-lg text-center flex flex-col sm:gap-6 justify-center place-items-center">
               <p>804, 8th floor, Arch Square X2</p>
               <p>EP-Y1, EP Block, Sector V, Saltlake</p>
               <p>Kolkata, West Bengal 700091</p>
