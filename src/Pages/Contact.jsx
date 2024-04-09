@@ -9,7 +9,7 @@ function Contact() {
           <section className=" w-full h-full flex flex-col-reverse sm:flex-row justify-center place-items-center sm:space-x-10 mt-10">
             <Map />
             <div className="form sm:w-[50%] w-full h-[65%] rounded-2xl backdrop-blur-sm overflow-hidden flex justify-center place-items-center">
-                <form className=" w-[85%] h-[95%] flex flex-col justify-center place-items-center gap-5">
+                <form className=" w-[85%] h-[95%] flex flex-col justify-center place-items-center gap-5 z-50">
 
                     <input className=" w-full" type="text" name="name" id="name" required placeholder="Enter your Name"/>
 

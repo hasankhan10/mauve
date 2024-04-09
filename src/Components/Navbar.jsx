@@ -4,14 +4,15 @@ import Menu from './Menu'
 
 function Navbar() {
  
-  const [display,setDisplay] = useState()
+  const [display,setDisplay] = useState("none")
   const [bgColor,setBgColor] = useState("")
   const getBool = (bool) => {
     bool === true ? setDisplay("block") : setDisplay("none")
     bool === true ? setBgColor("skyblue") : setBgColor("")
+  
   }
   return (
-    <div className='navbar absolute w-[100%] sm:h-[50px] h-[50%] top-7 flex sm:justify-start justify-end pl-16 sm:gap-72 z-[999]'>
+    <div className='navbar absolute w-[100%] sm:h-[50px] h-[40%] top-7 flex sm:justify-start justify-end pl-16 sm:gap-72 z-[999]'>
         <Menu getBool ={getBool} />
         <nav className='logo hidden sm:block h-full w-fit hover:scale-105 duration-200'>
         
