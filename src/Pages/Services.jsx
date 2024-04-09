@@ -1,25 +1,43 @@
-import React, { useState } from 'react'
-import ImageDiv from '../Components/ImageDiv'
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Mousewheel, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import '../assets/imageData'
+import { NavLink } from 'react-router-dom';
+import imageData from '../assets/imageData';
 function Services() {
-  const [Url,setUrl]= useState()
-  const getImageUrl = (getUrl)=>{
-    setUrl(getUrl)
-  }
   return (
-    <div className='service w-screen h-screen flex justify-center place-items-center'>
-        <section className='change-box w-[85%] h-[70%] z-50 mt-7 flex overflow-hidden'>
-            <div className=' h-full w-[10%] flex justify-center place-items-center'>
-                <button><img className=' h-14' src="https://cdn-icons-png.flaticon.com/512/2609/2609370.png" alt="" /></button>
-            </div>
-            <section className=' h-full w-[80%] shadow-2xl flex justify-end bg-slate-200 place-items-end rounded-lg relative gap-3 pr-3 pb-3 overflow-hidden'>
-                <img className=' w-full h-full absolute left-0 bottom-0' src={Url} alt="" />
-                <ImageDiv getUrl={getImageUrl} />
-            </section>
-            <div className=' h-full w-[10%] flex justify-center place-items-center'>
-                <button><img className=' h-14' src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="" /></button>
-            </div>
+    <div className='services w-screen h-screen flex justify-center place-items-center flex-col'>
+        <section className=' w-[80%] h-[70%] rounded-xl overflow-hidden'>
+                <Swiper
+                  modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel, Autoplay]}
+                  spaceBetween={50}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  scrollbar={{ draggable: true }}
+                  mousewheel={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  loop={true}
+                  
+            >
+              <SwiperSlide><img src={imageData[0].url} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={imageData[1].url} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={imageData[2].url} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={imageData[3].url} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={imageData[4].url} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={imageData[5].url} alt="" /></SwiperSlide>
+              ...
+            </Swiper>
         </section>
+        <NavLink to={'./contact'}>
+          <button className=" w-56 h-14 bg-blue-800 text-white font-bold text-xl mt-8 rounded-md hover:scale-105 duration-300 hover:shadow-2xl shadow-black border-white border-2">Get in touch</button>
+          </NavLink>
     </div>
   )
 }
