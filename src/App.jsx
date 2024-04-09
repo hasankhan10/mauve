@@ -10,10 +10,9 @@ function App() {
  
   return (
     <>
-        {/* <Navbar /> */}
-        <Services />
-        {/* <MouseFollower /> */}
-        {/* <Outlet /> */}
+        <Navbar />
+        <MouseFollower />
+        <Outlet />
     </>
   )
 }

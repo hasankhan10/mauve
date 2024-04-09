@@ -5,11 +5,13 @@ import Menu from './Menu'
 function Navbar() {
  
   const [display,setDisplay] = useState()
+  const [bgColor,setBgColor] = useState("")
   const getBool = (bool) => {
     bool === true ? setDisplay("block") : setDisplay("none")
+    bool === true ? setBgColor("skyblue") : setBgColor("")
   }
   return (
-    <div className='navbar absolute w-[100%] sm:h-[50px] h-[50%] top-7 flex sm:justify-start justify-end pl-16 sm:gap-72 z-50'>
+    <div className='navbar absolute w-[100%] sm:h-[50px] h-[50%] top-7 flex sm:justify-start justify-end pl-16 sm:gap-72 z-[999]'>
         <Menu getBool ={getBool} />
         <nav className='logo hidden sm:block h-full w-fit hover:scale-105 duration-200'>
         
@@ -21,7 +23,7 @@ function Navbar() {
         
         <nav className=' h-full w-[55%] backdrop:blur-3xl rounded-lg overflow-hidden flex justify-center shadow-lg shadow-gray-500 hover:shadow-gray-600 duration-200' style={{display:display}}>
       
-            <section className=' h-full w-full flex sm:flex-row flex-col justify-center place-items-center  gap-10 sm:gap-20 text-xl font-semibold'>
+            <section className=' h-full w-full flex sm:flex-row flex-col justify-center place-items-center  gap-10 sm:gap-20 text-xl font-semibold' style={{backgroundColor:bgColor}}>
 
                  <NavLink to={"/"}>
                   <h1 className=' hover:scale-105 duration-200'>Home</h1>

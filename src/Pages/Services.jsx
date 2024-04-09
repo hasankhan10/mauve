@@ -10,8 +10,9 @@ import imageData from '../assets/imageData';
 function Services() {
   return (
     <div className='services w-screen h-screen flex justify-center place-items-center flex-col'>
-        <section className=' w-[80%] h-[70%] rounded-xl overflow-hidden'>
+        <section className=' w-[80%] h-[70%] rounded-xl overflow-hidden mt-16'>
                 <Swiper
+                className='z-50'
                   modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel, Autoplay]}
                   spaceBetween={50}
                   slidesPerView={1}
@@ -22,8 +23,9 @@ function Services() {
                   autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
+                    pauseOnMouseEnter: true
                   }}
-                  loop={true}
+                  loop={true}   
                   
             >
               <SwiperSlide><img src={imageData[0].url} alt="" /></SwiperSlide>
@@ -35,9 +37,9 @@ function Services() {
               ...
             </Swiper>
         </section>
-        <NavLink to={'./contact'}>
+        <NavLink to={'/contact'} className={"z-50"}>
           <button className=" w-56 h-14 bg-blue-800 text-white font-bold text-xl mt-8 rounded-md hover:scale-105 duration-300 hover:shadow-2xl shadow-black border-white border-2">Get in touch</button>
-          </NavLink>
+        </NavLink>
     </div>
   )
 }

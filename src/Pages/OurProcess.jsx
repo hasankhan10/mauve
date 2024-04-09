@@ -13,7 +13,7 @@ function OurProcess() {
                 <TypeAnimation
                     sequence={["At Mauve interio our methodological approach lets us fully understand what solutions you really need. We work directly with all of our clients, implementing a variety of ideas that they have in mind. We then carefully craft a look that will reflect both their thoughts and needs, as well as their personality to create a stunningly beautiful room in the end."]}
                     cursor={false}
-                    speed={50}
+                    speed={80}
                 />
             </p>
             <NavLink to={"/contact"}>
