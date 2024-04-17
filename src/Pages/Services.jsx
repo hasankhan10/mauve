@@ -12,7 +12,7 @@ function Services() {
     <div className='services w-screen h-screen flex justify-center place-items-center flex-col'>
         <section className=' w-[80%] h-[70%] rounded-xl overflow-hidden mt-16'>
                 <Swiper
-                className='z-50'
+                className='z-40'
                   modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel, Autoplay]}
                   spaceBetween={50}
                   slidesPerView={1}

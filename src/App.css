@@ -68,8 +68,9 @@ textarea{
     transform: scale(1.01);
 }
 a.active{
-    color: blue;
-    font-weight: 700;
+    background-color: rgb(111, 107, 107);
+    border-radius: 10px;
+    padding: 10px;
 }
 #Services {
     height: 100%;

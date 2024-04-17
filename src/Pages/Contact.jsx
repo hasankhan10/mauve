@@ -1,15 +1,38 @@
 import Map from "../Components/Map"
-
+import {useState} from "react"
 function Contact() {
+  const [result, setResult] = useState("Submit");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "Acces token of sohel kaku");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Submitted Successfully, We will contact you soon !");
+      event.target.reset();
+    } else {
+      setResult(data.message);
+    }
+  };
   return (
     
       <div className='contact w-screen h-screen flex flex-col justify-center place-items-center bg-gray-400'>
 
-          <h1 className=" absolute z-10 sm:top-[95px] top-[20px] text-4xl font-bold font-mono text-black p-3 rounded-md text-center">Want to Contact with us ?</h1>
+          <h1 className=" absolute z-10 sm:top-[95px] top-[20px] text-4xl font-bold font-mono text-black p-3 rounded-md text-center hidden sm:block">Want to Contact with us ?</h1>
           <section className=" w-full h-full flex flex-col-reverse sm:flex-row justify-center place-items-center sm:space-x-10 mt-10">
             <Map />
             <div className="form sm:w-[50%] w-full h-[65%] rounded-2xl backdrop-blur-sm overflow-hidden flex justify-center place-items-center">
-                <form className=" w-[85%] h-[95%] flex flex-col justify-center place-items-center gap-5 z-50">
+                <form onSubmit={onSubmit} className=" w-[85%] h-[95%] flex flex-col justify-center place-items-center gap-5 z-50">
 
                     <input className=" w-full" type="text" name="name" id="name" required placeholder="Enter your Name"/>
 
@@ -22,7 +45,7 @@ function Contact() {
                     <textarea className=" w-full" name="message" id="message" cols="30" required rows="5" placeholder="Type your Message here !"></textarea>
 
 
-                    <button className=" text-xl font-bold w-40 h-10 cursor-pointer bg-blue-800 text-white rounded-lg hover:bg-blue-700 hover:border-2" type="submit">Submit</button>
+                    <button className=" text-xl font-bold min-w-40 min-h-10 p-2  cursor-pointer bg-blue-800 text-white rounded-lg hover:bg-blue-700 hover:border-2 z-[999]" type="submit">{result}</button>
 
                 </form> 
             </div>
