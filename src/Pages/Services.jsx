@@ -10,7 +10,7 @@ import imageData from '../assets/imageData';
 function Services() {
   return (
     <div className='services w-screen h-screen flex justify-center place-items-center flex-col'>
-        <section className=' w-[80%] h-[70%] rounded-xl overflow-hidden mt-16'>
+        <section className=' w-[80%] h-[70%] rounded-xl overflow-hidden mt-16 shadow-2xl'>
                 <Swiper
                 className='z-40'
                   modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel, Autoplay]}

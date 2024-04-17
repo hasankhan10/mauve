@@ -142,3 +142,9 @@ a.active{
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
   }
+.services{
+  background-image: url("https://cdn.dribbble.com/userupload/4955609/file/original-80f74227c588a444ea3bdf6494de7339.jpg?resize=1200x675");
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
