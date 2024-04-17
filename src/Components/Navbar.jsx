@@ -20,7 +20,7 @@ function Navbar() {
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn btn-ghost text-xl">Mouve Interio</a>
+    <a className="btn btn-ghost text-xl z-50">Mouve Interio</a>
   </div>
   <div className="navbar-end mr-10">
       <NavLink to={"/"} className={"z-[999]"}><img className=' w-8 rounded-full' src="https://static.wixstatic.com/media/5edfa9_ee63e8792bbc4428ae15f05ddaaadb33~mv2.png/v1/fill/w_64,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/mi.png" alt="" /></NavLink>
