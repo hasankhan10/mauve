@@ -148,3 +148,18 @@ a.active{
   object-fit: cover;
   background-position: center;
 }
+.navbar{
+  animation-name: navbar;
+  animation-duration: 1.5s;
+}
+@keyframes navbar {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+

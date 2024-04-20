@@ -1,8 +1,7 @@
 
 import { NavLink } from 'react-router-dom'
-
 function Navbar() {
- 
+
   return (
     <div className="navbar bg-base-100 text-white absolute">
   <div className="navbar-start">
