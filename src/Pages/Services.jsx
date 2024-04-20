@@ -7,10 +7,11 @@ import 'swiper/css/scrollbar';
 import '../assets/imageData'
 import { NavLink } from 'react-router-dom';
 import imageData from '../assets/imageData';
+import {motion} from "framer-motion"
 function Services() {
   return (
     <div className='services w-screen h-screen flex justify-center place-items-center flex-col'>
-        <section className=' w-[80%] h-[70%] rounded-xl overflow-hidden mt-16 shadow-2xl'>
+        <motion.section animate={{y:0,opacity:1}} initial={{y:-200,opacity:0}} transition={{duration:1}} className=' w-[80%] h-[70%] rounded-xl overflow-hidden mt-16 shadow-2xl'>
                 <Swiper
                 className='z-40'
                   modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel, Autoplay]}
@@ -36,10 +37,10 @@ function Services() {
               <SwiperSlide><img src={imageData[5].url} alt="" /></SwiperSlide>
               ...
             </Swiper>
-        </section>
-        <NavLink to={'/contact'} className={"z-50"}>
+        </motion.section>
+        <motion.NavLink animate={{y:0,opacity:1}} initial={{y:50,opacity:0}} transition={{duration:1}} to={'/contact'} className={"z-50"}>
           <button className=" w-56 h-14 bg-blue-800 text-white font-bold text-xl mt-8 rounded-md hover:scale-105 duration-300 hover:shadow-2xl shadow-black border-white border-2">Get in touch</button>
-        </NavLink>
+        </motion.NavLink>
     </div>
   )
 }

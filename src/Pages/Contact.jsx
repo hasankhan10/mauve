@@ -1,5 +1,6 @@
 import Map from "../Components/Map"
 import {useState} from "react"
+import {motion} from "framer-motion"
 function Contact() {
   const [result, setResult] = useState("Submit");
 
@@ -28,10 +29,10 @@ function Contact() {
     
       <div className='contact w-screen h-screen flex flex-col justify-center place-items-center bg-gray-400'>
 
-          <h1 className=" absolute z-10 sm:top-[95px] top-[20px] text-4xl font-bold font-mono text-black p-3 rounded-md text-center hidden sm:block">Want to Contact with us ?</h1>
+          <motion.h1 animate={{opacity:1}} initial={{opacity:0}} transition={{duration:3}} className=" absolute z-10 sm:top-[95px] top-[20px] text-4xl font-bold font-mono text-black p-3 rounded-md text-center hidden sm:block">Want to Contact with us ?</motion.h1>
           <section className=" w-full h-full flex flex-col-reverse sm:flex-row justify-center place-items-center sm:space-x-10 mt-10">
             <Map />
-            <div className="form sm:w-[50%] w-full h-[65%] rounded-2xl backdrop-blur-sm overflow-hidden flex justify-center place-items-center">
+            <motion.div animate={{y:0,opacity:1}} initial={{y:100,opacity:0}} transition={{duration:2}} className="form sm:w-[50%] w-full h-[65%] rounded-2xl backdrop-blur-sm overflow-hidden flex justify-center place-items-center">
                 <form onSubmit={onSubmit} className=" w-[85%] h-[95%] flex flex-col justify-center place-items-center gap-5 z-50">
 
                     <input className=" w-full" type="text" name="name" id="name" required placeholder="Enter your Name"/>
@@ -48,8 +49,8 @@ function Contact() {
                     <button className=" text-xl font-bold min-w-40 min-h-10 p-2  cursor-pointer bg-blue-800 text-white rounded-lg hover:bg-blue-700 hover:border-2 z-[999]" type="submit">{result}</button>
 
                 </form> 
-            </div>
-            <div className="con w-72 sm:h-96 mt-20 backdrop-blur-lg rounded-xl font-semibold text-lg text-center flex flex-col sm:gap-6 justify-center place-items-center">
+            </motion.div>
+            <motion.div animate={{y:0,opacity:1}} initial={{y:-100,opacity:0}} transition={{duration:2}} className="con w-72 sm:h-96 mt-20 backdrop-blur-lg rounded-xl font-semibold text-lg text-center flex flex-col sm:gap-6 justify-center place-items-center">
               <p>804, 8th floor, Arch Square X2</p>
               <p>EP-Y1, EP Block, Sector V, Saltlake</p>
               <p>Kolkata, West Bengal 700091</p>
@@ -59,7 +60,7 @@ function Contact() {
                 <img className=" w-8" src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="" />
               </a>
               <p>©2024 by Mauve interio.</p>
-            </div>
+            </motion.div>
           </section>=
       </div>
     
