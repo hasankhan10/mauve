@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home w-screen h-screen flex sm:justify-end justify-center">
         <div className="welcome sm:w-[50%] w-full h-full flex flex-col justify-center place-items-center">
-            <h1 className="heading sm:text-8xl text-5xl text-center sm:h-[30%] h-[18%] opacity-95 text-gray-800">
+            <h1 className="heading sm:text-8xl text-5xl text-center sm:h-[30%] h-[18%] opacity-95">
               <TypeAnimation
                 sequence={["Wellcome to Mauve Interio"]}
                 cursor={false}
