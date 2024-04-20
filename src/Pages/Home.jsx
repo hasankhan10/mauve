@@ -16,9 +16,9 @@ function Home() {
             <motion.p animate={{x:0,opacity:1}} initial={{x:300,opacity:0}} transition={{duration:2}} className=" text-center text-3xl mt-6 p-2 opacity-80 font-semibold">“It’s not what you look at that matters, it’s what you see” - Henry David Thoreau
             </motion.p>
 
-            <motion.NavLink animate={{y:0,opacity:1}} initial={{y:100,opacity:0}} transition={{duration:2}} to={"/contact"} className={" z-50"}>
+            <NavLink to={"/contact"} className={" z-50"}>
               <button className=" w-56 h-14 bg-blue-800 text-white font-bold text-xl mt-8 rounded-md hover:scale-105 duration-300 hover:shadow-2xl shadow-black">Get in touch</button>
-            </motion.NavLink>
+            </NavLink>
         </div>
     </div>
   )
