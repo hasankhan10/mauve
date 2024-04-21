@@ -151,6 +151,7 @@ a.active{
 .navbar{
   animation-name: navbar;
   animation-duration: 1.5s;
+  background-color:#581a31 ;
 }
 @keyframes navbar {
   from {
